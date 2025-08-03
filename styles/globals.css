@@ -1,11 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 :root {
-  --background: #171717;
-  --foreground: #ffffff;
+  --background: #050505;
+  --foreground: #F8F8F8;
+  --muted: #888888;                /* Subtext */
+  --accent-cyan: #22D3EE; 
+  --accent-purple: #A855F7;
+  --accent-orange: #FF6A3D;
+  --blue: #4FC3F7;                 
+  --pink: #EC4899;                 
+  --green: #22eebb;                /* Highlights */
+  --border: #1E1E1E;               /* Card and input borders */
+  --hover: #151515;                /* Hover surfaces */
+  --card-bg: #0D0D0D;              /* Panels and glass */
+  --code-bg: #101010;              /* Code blocks or consoles */
+  --overlay: rgba(0, 0, 0, 0.7);   /* Modals/backdrop */
+  --glow: 0 0 10px var(--accent-glow);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -17,5 +31,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
